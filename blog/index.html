@@ -1,0 +1,1058 @@
+<!doctype html>
+<html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+  <head >
+    <title>FunctionalMetatable</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1"><meta data-n-head="ssr" data-hid="description" name="description" content=""><link data-n-head="ssr" rel="icon" type="image/x-icon" href="https://cdn2.scratch.mit.edu/get_image/user/71379194_100x100.png"><link rel="preload" href="/_nuxt/9818d4a.js" as="script"><link rel="preload" href="/_nuxt/8a9d9cc.js" as="script"><link rel="preload" href="/_nuxt/613a642.js" as="script"><link rel="preload" href="/_nuxt/9473095.js" as="script"><link rel="preload" href="/_nuxt/929f3a0.js" as="script"><style data-vue-ssr-id="54b08540:0 0d8b0c4d:0 a57b151a:0 1239d49d:0 1239d49d:1 1239d49d:2 4e60cbb0:0">/*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com*/
+
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+
+html {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+Sections
+========
+*/
+
+/**
+Remove the margin in all browsers.
+*/
+
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+
+body {
+  font-family:
+		system-ui,
+		-apple-system, /* Firefox supports this but not yet `system-ui` */
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji';
+}
+
+/*
+Grouping content
+================
+*/
+
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family:
+		ui-monospace,
+		SFMono-Regular,
+		Consolas,
+		'Liberation Mono',
+		Menlo,
+		monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type='button'] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/**
+ * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
+ * A thin layer on top of normalize.css that provides a starting point more
+ * suitable for web applications.
+ */
+
+/**
+ * Removes the default spacing and border for appropriate elements.
+ */
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  background-image: none;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Tailwind custom reset styles
+ */
+
+/**
+ * 1. Use the user's configured `sans` font-family (with Tailwind's default
+ *    sans-serif font stack as a fallback) as a sane default.
+ * 2. Use Tailwind's default "normal" line-height so the user isn't forced
+ *    to override it to ensure consistency even when using the default theme.
+ */
+
+html {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  line-height: 1.5; /* 2 */
+}
+
+/**
+ * Inherit font-family and line-height from `html` so users can set them as
+ * a class directly on the `html` element.
+ */
+
+body {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+/**
+ * 1. Prevent padding and border from affecting element width.
+ *
+ *    We used to set this in the html element and inherit from
+ *    the parent element for everything else. This caused issues
+ *    in shadow-dom-enhanced elements like <details> where the content
+ *    is wrapped by a div with box-sizing set to `content-box`.
+ *
+ *    https://github.com/mozdevs/cssremedy/issues/4
+ *
+ *
+ * 2. Allow adding a border to an element by just adding a border-width.
+ *
+ *    By default, the way the browser specifies that an element should have no
+ *    border is by setting it's border-style to `none` in the user-agent
+ *    stylesheet.
+ *
+ *    In order to easily add borders to elements by just setting the `border-width`
+ *    property, we change the default border-style for all elements to `solid`, and
+ *    use border-width to hide them instead. This way our `border` utilities only
+ *    need to set the `border-width` property instead of the entire `border`
+ *    shorthand, making our border utilities much more straightforward to compose.
+ *
+ *    https://github.com/tailwindcss/tailwindcss/pull/116
+ */
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: currentColor; /* 2 */
+}
+
+/*
+ * Ensure horizontal rules are visible by default
+ */
+
+hr {
+  border-top-width: 1px;
+}
+
+/**
+ * Undo the `border-style: none` reset that Normalize applies to images so that
+ * our `border-{width}` utilities have the expected effect.
+ *
+ * The Normalize reset is unnecessary for us since we default the border-width
+ * to 0 on all elements.
+ *
+ * https://github.com/tailwindcss/tailwindcss/issues/362
+ */
+
+img {
+  border-style: solid;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+button {
+  cursor: pointer;
+}
+
+/**
+ * Override legacy focus reset from Normalize with modern Firefox focus styles.
+ *
+ * This is actually an improvement over the new defaults in Firefox in our testing,
+ * as it triggers the better focus styles even for links, which still use a dotted
+ * outline in Firefox by default.
+ */
+
+table {
+  border-collapse: collapse;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/**
+ * Reset links to optimize for opt-in styling instead of
+ * opt-out.
+ */
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/**
+ * Reset form element properties that are easy to forget to
+ * style explicitly so you don't inadvertently introduce
+ * styles that deviate from your design system. These styles
+ * supplement a partial reset that is already applied by
+ * normalize.css.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
+
+/**
+ * Use the configured 'mono' font family for elements that
+ * are expected to be rendered with a monospace font, falling
+ * back to the system monospace stack if there is no configured
+ * 'mono' font family.
+ */
+
+pre,
+code,
+kbd,
+samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/**
+ * 1. Make replaced elements `display: block` by default as that's
+ *    the behavior you want almost all of the time. Inspired by
+ *    CSS Remedy, with `svg` added as well.
+ *
+ *    https://github.com/mozdevs/cssremedy/issues/14
+ * 
+ * 2. Add `vertical-align: middle` to align replaced elements more
+ *    sensibly by default when overriding `display` by adding a
+ *    utility like `inline`.
+ *
+ *    This can trigger a poorly considered linting error in some
+ *    tools but is included by design.
+ * 
+ *    https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210
+ */
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/**
+ * Constrain images and videos to the parent width and preserve
+ * their intrinsic aspect ratio.
+ *
+ * https://github.com/mozdevs/cssremedy/issues/14
+ */
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+ * Ensure the default browser behavior of the `hidden` attribute.
+ */
+
+*, ::before, ::after{
+  --tw-border-opacity:1;
+  border-color:rgba(229, 231, 235, var(--tw-border-opacity));
+}
+
+.static{
+  position:static;
+}
+
+.sticky{
+  position:-webkit-sticky;
+  position:sticky;
+}
+
+.m-0{
+  margin:0px;
+}
+
+.m-8{
+  margin:2rem;
+}
+
+.m-10{
+  margin:2.5rem;
+}
+
+.mt-2{
+  margin-top:0.5rem;
+}
+
+.ml-10{
+  margin-left:2.5rem;
+}
+
+.ml-28{
+  margin-left:7rem;
+}
+
+.block{
+  display:block;
+}
+
+.inline-block{
+  display:inline-block;
+}
+
+.flex{
+  display:flex;
+}
+
+.table{
+  display:table;
+}
+
+.grid{
+  display:grid;
+}
+
+.w-96{
+  width:24rem;
+}
+
+.w-full{
+  width:100%;
+}
+
+.transform{
+  --tw-translate-x:0;
+  --tw-translate-y:0;
+  --tw-rotate:0;
+  --tw-skew-x:0;
+  --tw-skew-y:0;
+  --tw-scale-x:1;
+  --tw-scale-y:1;
+  transform:translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@-webkit-keyframes spin{
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+@keyframes spin{
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+@-webkit-keyframes ping{
+  75%, 100%{
+    transform:scale(2);
+    opacity:0;
+  }
+}
+
+@keyframes ping{
+  75%, 100%{
+    transform:scale(2);
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes pulse{
+  50%{
+    opacity:.5;
+  }
+}
+
+@keyframes pulse{
+  50%{
+    opacity:.5;
+  }
+}
+
+@-webkit-keyframes bounce{
+  0%, 100%{
+    transform:translateY(-25%);
+    -webkit-animation-timing-function:cubic-bezier(0.8,0,1,1);
+            animation-timing-function:cubic-bezier(0.8,0,1,1);
+  }
+
+  50%{
+    transform:none;
+    -webkit-animation-timing-function:cubic-bezier(0,0,0.2,1);
+            animation-timing-function:cubic-bezier(0,0,0.2,1);
+  }
+}
+
+@keyframes bounce{
+  0%, 100%{
+    transform:translateY(-25%);
+    -webkit-animation-timing-function:cubic-bezier(0.8,0,1,1);
+            animation-timing-function:cubic-bezier(0.8,0,1,1);
+  }
+
+  50%{
+    transform:none;
+    -webkit-animation-timing-function:cubic-bezier(0,0,0.2,1);
+            animation-timing-function:cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.cursor-pointer{
+  cursor:pointer;
+}
+
+.resize{
+  resize:both;
+}
+
+.flex-row{
+  flex-direction:row;
+}
+
+.rounded{
+  border-radius:0.25rem;
+}
+
+.rounded-full{
+  border-radius:9999px;
+}
+
+.border-2{
+  border-width:2px;
+}
+
+.border-blue-700{
+  --tw-border-opacity:1;
+  border-color:rgba(29, 78, 216, var(--tw-border-opacity));
+}
+
+.bg-blue-100{
+  --tw-bg-opacity:1;
+  background-color:rgba(219, 234, 254, var(--tw-bg-opacity));
+}
+
+.bg-blue-800{
+  --tw-bg-opacity:1;
+  background-color:rgba(30, 64, 175, var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-500:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(59, 130, 246, var(--tw-bg-opacity));
+}
+
+.p-8{
+  padding:2rem;
+}
+
+.p-10{
+  padding:2.5rem;
+}
+
+.px-5{
+  padding-left:1.25rem;
+  padding-right:1.25rem;
+}
+
+.py-2{
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+}
+
+.text-base{
+  font-size:1rem;
+  line-height:1.5rem;
+}
+
+.text-xl{
+  font-size:1.25rem;
+  line-height:1.75rem;
+}
+
+.text-2xl{
+  font-size:1.5rem;
+  line-height:2rem;
+}
+
+.text-3xl{
+  font-size:1.875rem;
+  line-height:2.25rem;
+}
+
+.text-4xl{
+  font-size:2.25rem;
+  line-height:2.5rem;
+}
+
+.text-5xl{
+  font-size:3rem;
+  line-height:1;
+}
+
+.text-6xl{
+  font-size:3.75rem;
+  line-height:1;
+}
+
+.font-semibold{
+  font-weight:600;
+}
+
+.font-bold{
+  font-weight:700;
+}
+
+.leading-8{
+  line-height:2rem;
+}
+
+.text-gray-100{
+  --tw-text-opacity:1;
+  color:rgba(243, 244, 246, var(--tw-text-opacity));
+}
+
+.text-gray-500{
+  --tw-text-opacity:1;
+  color:rgba(107, 114, 128, var(--tw-text-opacity));
+}
+
+.text-blue-700{
+  --tw-text-opacity:1;
+  color:rgba(29, 78, 216, var(--tw-text-opacity));
+}
+
+.text-blue-800{
+  --tw-text-opacity:1;
+  color:rgba(30, 64, 175, var(--tw-text-opacity));
+}
+
+.text-purple-50{
+  --tw-text-opacity:1;
+  color:rgba(245, 243, 255, var(--tw-text-opacity));
+}
+
+.hover\:text-gray-200:hover{
+  --tw-text-opacity:1;
+  color:rgba(229, 231, 235, var(--tw-text-opacity));
+}
+
+*, ::before, ::after{
+  --tw-shadow:0 0 #0000;
+}
+
+.shadow-md{
+  --tw-shadow:0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-lg{
+  --tw-shadow:0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-xl{
+  --tw-shadow:0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-2xl{
+  --tw-shadow:0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+*, ::before, ::after{
+  --tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width:0px;
+  --tw-ring-offset-color:#fff;
+  --tw-ring-color:rgba(59, 130, 246, 0.5);
+  --tw-ring-offset-shadow:0 0 #0000;
+  --tw-ring-shadow:0 0 #0000;
+}
+
+.duration-500{
+  transition-duration:500ms;
+}
+
+@media (min-width: 640px){
+  .sm\:text-4xl{
+    font-size:2.25rem;
+    line-height:2.5rem;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:flex-auto{
+    flex:1 1 auto;
+  }
+
+  .md\:flex-row-reverse{
+    flex-direction:row-reverse;
+  }
+}
+
+@media (min-width: 1024px){
+}
+
+@media (min-width: 1280px){
+}
+
+@media (min-width: 1536px){
+}
+/*purgecss start ignore*/
+
+code[class*=language-],pre[class*=language-]{
+  color:#000;
+  background:none;
+  text-shadow:0 1px #fff;
+  font-family:Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+  font-size:1em;
+  text-align:left;
+  white-space:pre;
+  word-spacing:normal;
+  word-break:normal;
+  word-wrap:normal;
+  line-height:1.5;
+  -moz-tab-size:4;
+  -o-tab-size:4;
+  tab-size:4;
+  -webkit-hyphens:none;
+  -ms-hyphens:none;
+  hyphens:none
+}
+
+code[class*=language-]::-moz-selection,code[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection{
+  text-shadow:none;
+  background:#b3d4fc
+}
+
+code[class*=language-]::-moz-selection, code[class*=language-] ::-moz-selection, pre[class*=language-]::-moz-selection, pre[class*=language-] ::-moz-selection{
+  text-shadow:none;
+  background:#b3d4fc
+}
+
+code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{
+  text-shadow:none;
+  background:#b3d4fc
+}
+
+@media print{
+  code[class*=language-],pre[class*=language-]{
+    text-shadow:none
+  }
+}
+
+pre[class*=language-]{
+  padding:1em;
+  margin:.5em 0;
+  overflow:auto
+}
+
+:not(pre)>code[class*=language-],pre[class*=language-]{
+  background:#f5f2f0
+}
+
+:not(pre)>code[class*=language-]{
+  padding:.1em;
+  border-radius:.3em;
+  white-space:normal
+}
+
+.token.cdata,.token.comment,.token.doctype,.token.prolog{
+  color:#708090
+}
+
+.token.punctuation{
+  color:#999
+}
+
+.token.namespace{
+  opacity:.7
+}
+
+.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{
+  color:#905
+}
+
+.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{
+  color:#690
+}
+
+.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{
+  color:#9a6e3a;
+  background:hsla(0,0%,100%,.5)
+}
+
+.token.atrule,.token.attr-value,.token.keyword{
+  color:#07a
+}
+
+.token.class-name,.token.function{
+  color:#dd4a68
+}
+
+.token.important,.token.regex,.token.variable{
+  color:#e90
+}
+
+.token.bold,.token.important{
+  font-weight:700
+}
+
+.token.italic{
+  font-style:italic
+}
+
+.token.entity{
+  cursor:help
+}
+
+/*purgecss end ignore*/
+/*purgecss start ignore*/
+.nuxt-progress{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  height:2px;
+  width:0;
+  opacity:1;
+  transition:width .1s,opacity .4s;
+  background-color:#000;
+  z-index:999999
+}
+.nuxt-progress.nuxt-progress-notransition{
+  transition:none
+}
+.nuxt-progress-failed{
+  background-color:red
+}
+
+/*purgecss end ignore*/
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+/*purgecss start ignore*/
+body{
+  margin:0
+}
+.jumbotron-text-center *{
+  float:center
+}
+#content{
+  margin-left:10%
+}
+
+/*purgecss end ignore*/
+/*purgecss start ignore*/
+.icons[data-v-13cdbfe3]{
+  text-align:right
+}
+
+/*purgecss end ignore*/</style><link rel="preload" href="/_nuxt/static/1654979755/blog/state.js" as="script"><link rel="preload" href="/_nuxt/static/1654979755/blog/payload.js" as="script"><link rel="preload" href="/_nuxt/static/1654979755/manifest.js" as="script">
+  </head>
+  <body >
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div><div class="nav"><div class="shadow-md bg-blue-800 flex"><div><div class="ease duration-500 inline-block text-gray-100 py-2 px-5 hover:text-gray-200 hover:text-underline hover:bg-blue-500"><a href="/" class="nuxt-link-active">
+        Home
+      </a></div></div><div><div class="ease duration-500 inline-block text-gray-100 py-2 px-5 hover:text-gray-200 hover:text-underline hover:bg-blue-500"><a href="/blog" aria-current="page" class="nuxt-link-exact-active nuxt-link-active">
+        Blog
+      </a></div></div><div><div class="ease duration-500 inline-block text-gray-100 py-2 px-5 hover:text-gray-200 hover:text-underline hover:bg-blue-500"><a href="/projects">
+        Projects
+      </a></div></div></div></div> <div class="main"><div class="flex"><div class="blog-post-card p-8 m-8 w-96 border-2 border-blue-700 shadow-lg cursor-pointer"><a href="/blog/Hello-World"><p class="text-3xl">Hello World!</p> <p class="text-base">My first blog post</p></a></div></div></div> <div class="footer"><div class="shadow-3xl bg-blue-800" data-v-13cdbfe3><div class="m-0" data-v-13cdbfe3><div class="bottom p-10" data-v-13cdbfe3><p class="text-purple-50" data-v-13cdbfe3>
+        Copyright © rellyepikprograma 2022. All Rights Reserved unless noted.
+        <br data-v-13cdbfe3> <br data-v-13cdbfe3></p><div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex icons align-right" data-v-13cdbfe3><a href="https://github.com/rellyepikprograma" data-v-13cdbfe3><svg height="30" viewBox="0 0 16 16" version="1.1" width="30" fill="#E5E7ED" data-v-13cdbfe3><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" data-v-13cdbfe3></path></svg></a> <a href="https://scratch.mit.edu/users/rellyepikprograma" data-v-13cdbfe3><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0,0,54.81885,81.9421" data-v-13cdbfe3><g transform="translate(-213,-139.9999)" data-v-13cdbfe3><g data-paper-data="{"isPaintingLayer":true}" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray stroke-dashoffset="0" style="mix-blend-mode: normal" data-v-13cdbfe3><path d="M266.78,199.432c-3.23,8.95 -12.01,14.39 -26.09,16.17c-0.64,0.08 -1.27,0.13 -1.9,0.15c-0.82,1.2 -1.89,2.24 -3.15,3.05c-3.3,2.11 -6.39,3.14 -9.44,3.14c-6.27,0 -13.02,-4.68 -13.02,-14.96c0,-0.7 0.03,-1.61 0.1,-2.87c0.03,-0.54 0.06,-0.96 0.07,-1.27c-0.17,-0.78 -0.26,-1.57 -0.26,-2.37v-4.84c0,-0.79 0.08,-1.58 0.24,-2.37c0.01,-0.67 0.04,-1.42 0.09,-2.24c-0.24,-0.88 -0.42,-1.9 -0.42,-3.04c0,-0.52 0.04,-1.04 0.11,-1.55c0.38,-2.68 1.57,-5.37 3.58,-7.52c-0.69,-1.93 -1.05,-3.97 -1.05,-6.06v-5.1c0,-2.07 0.41,-4.65 2.42,-11.07c0.84,-2.76 1.11,-3.62 1.48,-4.42c1.97,-4.42 4.94,-6.63 7.1,-7.72c3.53,-1.76 7.32,-2.66 11.26,-2.66c1.82,0 3.56,0.19 5.22,0.55c0.74,-0.5 1.53,-0.92 2.37,-1.27c1.07,-0.46 2.21,-0.78 3.47,-0.98c3.15,-0.54 6.48,0.13 9.38,1.89c3.05,1.86 6.55,5.72 6.12,13.66c-0.07,1.4 -0.19,3.27 -0.37,5.71c-0.01,0.06 -0.01,0.12 -0.02,0.18c-0.16,1.77 -0.39,4.41 -0.7,7.9c0.08,1.35 0.05,2.86 -0.07,4.64c-0.05,0.68 -0.16,1.36 -0.34,2.02c-0.04,0.15 -0.08,0.29 -0.12,0.42c1.35,1.73 2.27,3.46 2.9,4.96c0.59,1.19 1.09,2.56 1.53,4.23c0.17,0.63 0.28,1.27 0.33,1.92c0.45,5.61 0.22,8.92 -0.82,11.72z" fill="#e5e7ed" data-v-13cdbfe3></path> <path d="M256.636,188.596c0.293,3.637 0.233,5.981 -0.176,7.037c-1.702,4.809 -7.42,7.828 -17.152,9.06c-3.285,0.411 -6.568,-1.143 -9.853,-4.662c0,0.528 0.117,2.111 0.353,4.751c0.176,1.935 0.146,3.518 -0.088,4.749c-1.467,0.938 -2.639,1.408 -3.519,1.408c-1.35,0 -2.023,-1.319 -2.023,-3.959c0,-0.469 0.029,-1.216 0.088,-2.242c0.058,-1.025 0.088,-1.744 0.088,-2.155c0,-0.997 -0.088,-1.7 -0.264,-2.111v-4.838c0,-0.117 0.029,-0.249 0.088,-0.396c0.058,-0.146 0.117,-0.278 0.176,-0.396c-0.059,-0.82 -0.03,-2.081 0.088,-3.782c0.117,-1.056 0.117,-1.729 0,-2.023c-0.294,-0.585 -0.439,-0.937 -0.439,-1.055c0.233,-1.642 1.437,-2.463 3.606,-2.463c1.407,0 2.257,0.499 2.551,1.495c0,0.938 0.117,2.317 0.352,4.134c0.353,2.111 1.466,4.223 3.343,6.333c2.052,2.405 4.016,3.519 5.894,3.343c2.111,-0.233 4.222,-0.732 6.333,-1.495c2.932,-1.056 4.691,-2.287 5.278,-3.694c0.409,-1.056 0.615,-2.169 0.615,-3.343c0,-3.576 -1.319,-6.245 -3.958,-8.004c-1.174,-0.762 -3.343,-1.378 -6.51,-1.848c-1.818,-0.233 -2.933,-0.352 -3.342,-0.352c-2.815,0.059 -5.44,-0.85 -7.873,-2.727c-2.434,-1.876 -3.65,-4.047 -3.65,-6.51v-5.101c0,-1.113 0.645,-3.723 1.936,-7.828c0.585,-1.936 0.908,-2.961 0.968,-3.079c0.527,-1.231 1.201,-2.052 2.022,-2.463c1.993,-0.996 4.104,-1.495 6.333,-1.495c4.339,0 7.535,1.759 9.588,5.277c0.176,0.176 0.469,0.44 0.88,0.792c0.058,-0.82 0.176,-2.081 0.352,-3.782c-0.059,-0.762 -0.118,-1.495 -0.176,-2.199c0,-0.82 0.409,-1.377 1.231,-1.671c0.234,-0.117 0.557,-0.205 0.968,-0.264c0.586,-0.117 1.217,0.03 1.892,0.439c0.673,0.411 0.952,1.643 0.835,3.694c-0.059,1.29 -0.176,3.108 -0.352,5.453c-0.176,1.936 -0.439,4.897 -0.792,8.885c0.117,0.938 0.117,2.229 0,3.87c-0.294,1.114 -1.174,1.671 -2.639,1.671c-0.763,0 -1.495,-0.205 -2.199,-0.615c-0.352,-1.113 -0.527,-1.584 -0.527,-1.408c0.116,-1.583 -0.206,-3.694 -0.968,-6.333c-0.646,-1.348 -1.539,-3.268 -2.683,-5.761c-1.144,-2.492 -2.654,-3.827 -4.53,-4.003c-2.346,-0.176 -3.87,0.616 -4.574,2.375c-0.234,0.763 -0.558,1.878 -0.967,3.343c-0.704,2.17 -1.144,4.252 -1.32,6.245c-0.059,0.646 -0.118,0.91 -0.176,0.792c0.176,1.174 0.381,2.346 0.616,3.519c0.293,1.466 1.012,2.581 2.155,3.342c1.144,0.763 3.327,1.231 6.553,1.407c7.916,0.471 12.812,3.227 14.689,8.269c0.292,0.47 0.585,1.261 0.879,2.374z" fill="#1e40af" data-v-13cdbfe3></path></g></g></svg></a></div> <p data-v-13cdbfe3></p></div></div></div></div></div></div></div><script defer src="/_nuxt/static/1654979755/blog/state.js"></script><script src="/_nuxt/9818d4a.js" defer></script><script src="/_nuxt/929f3a0.js" defer></script><script src="/_nuxt/8a9d9cc.js" defer></script><script src="/_nuxt/613a642.js" defer></script><script src="/_nuxt/9473095.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,1640 @@
+<!doctype html>
+<html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+  <head >
+    <title>April Fools Directory - The Archive - FunctionalMetatable</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1"><meta data-n-head="ssr" data-hid="description" name="description" content=""><link data-n-head="ssr" rel="icon" type="image/x-icon" href="https://cdn2.scratch.mit.edu/get_image/user/71379194_100x100.png"><link rel="preload" href="/_nuxt/9818d4a.js" as="script"><link rel="preload" href="/_nuxt/8a9d9cc.js" as="script"><link rel="preload" href="/_nuxt/613a642.js" as="script"><link rel="preload" href="/_nuxt/9473095.js" as="script"><link rel="preload" href="/_nuxt/50c6b79.js" as="script"><style data-vue-ssr-id="54b08540:0 0d8b0c4d:0 a57b151a:0 1239d49d:0 1239d49d:1 1239d49d:2 eb6de2ca:0 4e60cbb0:0">/*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com*/
+
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+
+html {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+Sections
+========
+*/
+
+/**
+Remove the margin in all browsers.
+*/
+
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+
+body {
+  font-family:
+		system-ui,
+		-apple-system, /* Firefox supports this but not yet `system-ui` */
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji';
+}
+
+/*
+Grouping content
+================
+*/
+
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family:
+		ui-monospace,
+		SFMono-Regular,
+		Consolas,
+		'Liberation Mono',
+		Menlo,
+		monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type='button'] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/**
+ * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
+ * A thin layer on top of normalize.css that provides a starting point more
+ * suitable for web applications.
+ */
+
+/**
+ * Removes the default spacing and border for appropriate elements.
+ */
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  background-image: none;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Tailwind custom reset styles
+ */
+
+/**
+ * 1. Use the user's configured `sans` font-family (with Tailwind's default
+ *    sans-serif font stack as a fallback) as a sane default.
+ * 2. Use Tailwind's default "normal" line-height so the user isn't forced
+ *    to override it to ensure consistency even when using the default theme.
+ */
+
+html {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  line-height: 1.5; /* 2 */
+}
+
+/**
+ * Inherit font-family and line-height from `html` so users can set them as
+ * a class directly on the `html` element.
+ */
+
+body {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+/**
+ * 1. Prevent padding and border from affecting element width.
+ *
+ *    We used to set this in the html element and inherit from
+ *    the parent element for everything else. This caused issues
+ *    in shadow-dom-enhanced elements like <details> where the content
+ *    is wrapped by a div with box-sizing set to `content-box`.
+ *
+ *    https://github.com/mozdevs/cssremedy/issues/4
+ *
+ *
+ * 2. Allow adding a border to an element by just adding a border-width.
+ *
+ *    By default, the way the browser specifies that an element should have no
+ *    border is by setting it's border-style to `none` in the user-agent
+ *    stylesheet.
+ *
+ *    In order to easily add borders to elements by just setting the `border-width`
+ *    property, we change the default border-style for all elements to `solid`, and
+ *    use border-width to hide them instead. This way our `border` utilities only
+ *    need to set the `border-width` property instead of the entire `border`
+ *    shorthand, making our border utilities much more straightforward to compose.
+ *
+ *    https://github.com/tailwindcss/tailwindcss/pull/116
+ */
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: currentColor; /* 2 */
+}
+
+/*
+ * Ensure horizontal rules are visible by default
+ */
+
+hr {
+  border-top-width: 1px;
+}
+
+/**
+ * Undo the `border-style: none` reset that Normalize applies to images so that
+ * our `border-{width}` utilities have the expected effect.
+ *
+ * The Normalize reset is unnecessary for us since we default the border-width
+ * to 0 on all elements.
+ *
+ * https://github.com/tailwindcss/tailwindcss/issues/362
+ */
+
+img {
+  border-style: solid;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+button {
+  cursor: pointer;
+}
+
+/**
+ * Override legacy focus reset from Normalize with modern Firefox focus styles.
+ *
+ * This is actually an improvement over the new defaults in Firefox in our testing,
+ * as it triggers the better focus styles even for links, which still use a dotted
+ * outline in Firefox by default.
+ */
+
+table {
+  border-collapse: collapse;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/**
+ * Reset links to optimize for opt-in styling instead of
+ * opt-out.
+ */
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/**
+ * Reset form element properties that are easy to forget to
+ * style explicitly so you don't inadvertently introduce
+ * styles that deviate from your design system. These styles
+ * supplement a partial reset that is already applied by
+ * normalize.css.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
+
+/**
+ * Use the configured 'mono' font family for elements that
+ * are expected to be rendered with a monospace font, falling
+ * back to the system monospace stack if there is no configured
+ * 'mono' font family.
+ */
+
+pre,
+code,
+kbd,
+samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/**
+ * 1. Make replaced elements `display: block` by default as that's
+ *    the behavior you want almost all of the time. Inspired by
+ *    CSS Remedy, with `svg` added as well.
+ *
+ *    https://github.com/mozdevs/cssremedy/issues/14
+ * 
+ * 2. Add `vertical-align: middle` to align replaced elements more
+ *    sensibly by default when overriding `display` by adding a
+ *    utility like `inline`.
+ *
+ *    This can trigger a poorly considered linting error in some
+ *    tools but is included by design.
+ * 
+ *    https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210
+ */
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/**
+ * Constrain images and videos to the parent width and preserve
+ * their intrinsic aspect ratio.
+ *
+ * https://github.com/mozdevs/cssremedy/issues/14
+ */
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+ * Ensure the default browser behavior of the `hidden` attribute.
+ */
+
+*, ::before, ::after{
+  --tw-border-opacity:1;
+  border-color:rgba(229, 231, 235, var(--tw-border-opacity));
+}
+
+.static{
+  position:static;
+}
+
+.sticky{
+  position:-webkit-sticky;
+  position:sticky;
+}
+
+.m-0{
+  margin:0px;
+}
+
+.m-8{
+  margin:2rem;
+}
+
+.m-10{
+  margin:2.5rem;
+}
+
+.mt-2{
+  margin-top:0.5rem;
+}
+
+.ml-10{
+  margin-left:2.5rem;
+}
+
+.ml-28{
+  margin-left:7rem;
+}
+
+.block{
+  display:block;
+}
+
+.inline-block{
+  display:inline-block;
+}
+
+.flex{
+  display:flex;
+}
+
+.table{
+  display:table;
+}
+
+.grid{
+  display:grid;
+}
+
+.w-96{
+  width:24rem;
+}
+
+.w-full{
+  width:100%;
+}
+
+.transform{
+  --tw-translate-x:0;
+  --tw-translate-y:0;
+  --tw-rotate:0;
+  --tw-skew-x:0;
+  --tw-skew-y:0;
+  --tw-scale-x:1;
+  --tw-scale-y:1;
+  transform:translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@-webkit-keyframes spin{
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+@keyframes spin{
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+@-webkit-keyframes ping{
+  75%, 100%{
+    transform:scale(2);
+    opacity:0;
+  }
+}
+
+@keyframes ping{
+  75%, 100%{
+    transform:scale(2);
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes pulse{
+  50%{
+    opacity:.5;
+  }
+}
+
+@keyframes pulse{
+  50%{
+    opacity:.5;
+  }
+}
+
+@-webkit-keyframes bounce{
+  0%, 100%{
+    transform:translateY(-25%);
+    -webkit-animation-timing-function:cubic-bezier(0.8,0,1,1);
+            animation-timing-function:cubic-bezier(0.8,0,1,1);
+  }
+
+  50%{
+    transform:none;
+    -webkit-animation-timing-function:cubic-bezier(0,0,0.2,1);
+            animation-timing-function:cubic-bezier(0,0,0.2,1);
+  }
+}
+
+@keyframes bounce{
+  0%, 100%{
+    transform:translateY(-25%);
+    -webkit-animation-timing-function:cubic-bezier(0.8,0,1,1);
+            animation-timing-function:cubic-bezier(0.8,0,1,1);
+  }
+
+  50%{
+    transform:none;
+    -webkit-animation-timing-function:cubic-bezier(0,0,0.2,1);
+            animation-timing-function:cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.cursor-pointer{
+  cursor:pointer;
+}
+
+.resize{
+  resize:both;
+}
+
+.flex-row{
+  flex-direction:row;
+}
+
+.rounded{
+  border-radius:0.25rem;
+}
+
+.rounded-full{
+  border-radius:9999px;
+}
+
+.border-2{
+  border-width:2px;
+}
+
+.border-blue-700{
+  --tw-border-opacity:1;
+  border-color:rgba(29, 78, 216, var(--tw-border-opacity));
+}
+
+.bg-blue-100{
+  --tw-bg-opacity:1;
+  background-color:rgba(219, 234, 254, var(--tw-bg-opacity));
+}
+
+.bg-blue-800{
+  --tw-bg-opacity:1;
+  background-color:rgba(30, 64, 175, var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-500:hover{
+  --tw-bg-opacity:1;
+  background-color:rgba(59, 130, 246, var(--tw-bg-opacity));
+}
+
+.p-8{
+  padding:2rem;
+}
+
+.p-10{
+  padding:2.5rem;
+}
+
+.px-5{
+  padding-left:1.25rem;
+  padding-right:1.25rem;
+}
+
+.py-2{
+  padding-top:0.5rem;
+  padding-bottom:0.5rem;
+}
+
+.text-base{
+  font-size:1rem;
+  line-height:1.5rem;
+}
+
+.text-xl{
+  font-size:1.25rem;
+  line-height:1.75rem;
+}
+
+.text-2xl{
+  font-size:1.5rem;
+  line-height:2rem;
+}
+
+.text-3xl{
+  font-size:1.875rem;
+  line-height:2.25rem;
+}
+
+.text-4xl{
+  font-size:2.25rem;
+  line-height:2.5rem;
+}
+
+.text-5xl{
+  font-size:3rem;
+  line-height:1;
+}
+
+.text-6xl{
+  font-size:3.75rem;
+  line-height:1;
+}
+
+.font-semibold{
+  font-weight:600;
+}
+
+.font-bold{
+  font-weight:700;
+}
+
+.leading-8{
+  line-height:2rem;
+}
+
+.text-gray-100{
+  --tw-text-opacity:1;
+  color:rgba(243, 244, 246, var(--tw-text-opacity));
+}
+
+.text-gray-500{
+  --tw-text-opacity:1;
+  color:rgba(107, 114, 128, var(--tw-text-opacity));
+}
+
+.text-blue-700{
+  --tw-text-opacity:1;
+  color:rgba(29, 78, 216, var(--tw-text-opacity));
+}
+
+.text-blue-800{
+  --tw-text-opacity:1;
+  color:rgba(30, 64, 175, var(--tw-text-opacity));
+}
+
+.text-purple-50{
+  --tw-text-opacity:1;
+  color:rgba(245, 243, 255, var(--tw-text-opacity));
+}
+
+.hover\:text-gray-200:hover{
+  --tw-text-opacity:1;
+  color:rgba(229, 231, 235, var(--tw-text-opacity));
+}
+
+*, ::before, ::after{
+  --tw-shadow:0 0 #0000;
+}
+
+.shadow-md{
+  --tw-shadow:0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-lg{
+  --tw-shadow:0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-xl{
+  --tw-shadow:0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-2xl{
+  --tw-shadow:0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+*, ::before, ::after{
+  --tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width:0px;
+  --tw-ring-offset-color:#fff;
+  --tw-ring-color:rgba(59, 130, 246, 0.5);
+  --tw-ring-offset-shadow:0 0 #0000;
+  --tw-ring-shadow:0 0 #0000;
+}
+
+.duration-500{
+  transition-duration:500ms;
+}
+
+@media (min-width: 640px){
+  .sm\:text-4xl{
+    font-size:2.25rem;
+    line-height:2.5rem;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:flex-auto{
+    flex:1 1 auto;
+  }
+
+  .md\:flex-row-reverse{
+    flex-direction:row-reverse;
+  }
+}
+
+@media (min-width: 1024px){
+}
+
+@media (min-width: 1280px){
+}
+
+@media (min-width: 1536px){
+}
+/*purgecss start ignore*/
+
+code[class*=language-],pre[class*=language-]{
+  color:#000;
+  background:none;
+  text-shadow:0 1px #fff;
+  font-family:Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+  font-size:1em;
+  text-align:left;
+  white-space:pre;
+  word-spacing:normal;
+  word-break:normal;
+  word-wrap:normal;
+  line-height:1.5;
+  -moz-tab-size:4;
+  -o-tab-size:4;
+  tab-size:4;
+  -webkit-hyphens:none;
+  -ms-hyphens:none;
+  hyphens:none
+}
+
+code[class*=language-]::-moz-selection,code[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection{
+  text-shadow:none;
+  background:#b3d4fc
+}
+
+code[class*=language-]::-moz-selection, code[class*=language-] ::-moz-selection, pre[class*=language-]::-moz-selection, pre[class*=language-] ::-moz-selection{
+  text-shadow:none;
+  background:#b3d4fc
+}
+
+code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{
+  text-shadow:none;
+  background:#b3d4fc
+}
+
+@media print{
+  code[class*=language-],pre[class*=language-]{
+    text-shadow:none
+  }
+}
+
+pre[class*=language-]{
+  padding:1em;
+  margin:.5em 0;
+  overflow:auto
+}
+
+:not(pre)>code[class*=language-],pre[class*=language-]{
+  background:#f5f2f0
+}
+
+:not(pre)>code[class*=language-]{
+  padding:.1em;
+  border-radius:.3em;
+  white-space:normal
+}
+
+.token.cdata,.token.comment,.token.doctype,.token.prolog{
+  color:#708090
+}
+
+.token.punctuation{
+  color:#999
+}
+
+.token.namespace{
+  opacity:.7
+}
+
+.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{
+  color:#905
+}
+
+.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{
+  color:#690
+}
+
+.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{
+  color:#9a6e3a;
+  background:hsla(0,0%,100%,.5)
+}
+
+.token.atrule,.token.attr-value,.token.keyword{
+  color:#07a
+}
+
+.token.class-name,.token.function{
+  color:#dd4a68
+}
+
+.token.important,.token.regex,.token.variable{
+  color:#e90
+}
+
+.token.bold,.token.important{
+  font-weight:700
+}
+
+.token.italic{
+  font-style:italic
+}
+
+.token.entity{
+  cursor:help
+}
+
+/*purgecss end ignore*/
+/*purgecss start ignore*/
+.nuxt-progress{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  height:2px;
+  width:0;
+  opacity:1;
+  transition:width .1s,opacity .4s;
+  background-color:#000;
+  z-index:999999
+}
+.nuxt-progress.nuxt-progress-notransition{
+  transition:none
+}
+.nuxt-progress-failed{
+  background-color:red
+}
+
+/*purgecss end ignore*/
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+/*purgecss start ignore*/
+body{
+  margin:0
+}
+.jumbotron-text-center *{
+  float:center
+}
+#content{
+  margin-left:10%
+}
+
+/*purgecss end ignore*/
+/*purgecss start ignore*/
+h1[data-v-2197f935]{
+  font-size:3.75rem;
+  line-height:1
+}
+h2[data-v-2197f935]{
+  font-size:3rem;
+  line-height:1
+}
+h3[data-v-2197f935]{
+  font-size:2.25rem;
+  line-height:2.5rem
+}
+h4[data-v-2197f935]{
+  font-size:1.875rem;
+  line-height:2.25rem
+}
+
+/*purgecss end ignore*/
+/*purgecss start ignore*/
+.icons[data-v-13cdbfe3]{
+  text-align:right
+}
+
+/*purgecss end ignore*/</style><link rel="preload" href="/_nuxt/static/1654979755/projects/april-fools-directory/state.js" as="script"><link rel="preload" href="/_nuxt/static/1654979755/projects/april-fools-directory/payload.js" as="script"><link rel="preload" href="/_nuxt/static/1654979755/manifest.js" as="script">
+  </head>
+  <body >
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div><div class="nav"><div class="shadow-md bg-blue-800 flex"><div><div class="ease duration-500 inline-block text-gray-100 py-2 px-5 hover:text-gray-200 hover:text-underline hover:bg-blue-500"><a href="/" class="nuxt-link-active">
+        Home
+      </a></div></div><div><div class="ease duration-500 inline-block text-gray-100 py-2 px-5 hover:text-gray-200 hover:text-underline hover:bg-blue-500"><a href="/blog">
+        Blog
+      </a></div></div><div><div class="ease duration-500 inline-block text-gray-100 py-2 px-5 hover:text-gray-200 hover:text-underline hover:bg-blue-500"><a href="/projects" class="nuxt-link-active">
+        Projects
+      </a></div></div></div></div> <div class="main"><div class="m-10" data-v-2197f935><h4 data-v-2197f935>
+  1)<a href="https://scratch.mit.edu/discuss/topic/499628" data-v-2197f935>April Fool’s Day!</a></h4> <a style="font-size: 10px" data-v-2197f935>in Announcements</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  2)<a href="https://scratch.mit.edu/discuss/topic/500188" data-v-2197f935>BAN EVERYONE WHO PARTICIPATED IN APRILS FOOLS ON THE SUGGESTION FORUMS
+    (LIST OF FOOLS INCLUDED)</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>3)<a href="https://scratch.mit.edu/discuss/topic/499387" data-v-2197f935>Allow bruh</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+Suggestion to Allow BRUH in scratch!!
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  4)<a href="https://scratch.mit.edu/discuss/topic/499414" data-v-2197f935>pardon all duplicates</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+lets delete the meaning of duplicates
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  5)<a href="https://scratch.mit.edu/discuss/topic/499436" data-v-2197f935>ban posting</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+ban posting to stop necroposting
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  6)<a href="https://scratch.mit.edu/discuss/topic/499359" data-v-2197f935>WikiText in forum posts</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+add epic images to the front page
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>7)<a href="https://scratch.mit.edu/discuss/topic/499383" data-v-2197f935>sugetons</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+a list of really epic suggestions
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  8)<a href="https://scratch.mit.edu/discuss/topic/499429" data-v-2197f935>Completely BAN Links to YouTube and DeviantArt from Scratch</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+ban stuff that nobody actually knows about
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  9)<a href="https://scratch.mit.edu/discuss/topic/499440" data-v-2197f935>close the sugeston forum</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+close the sugeston forum to prevent nothing
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  10)<a href="https://scratch.mit.edu/discuss/topic/499280" data-v-2197f935>Don't let ST members ruin my evil plans</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+cheesydoesstuff wants to take over the world btw i think
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  11)<a href="https://scratch.mit.edu/discuss/topic/499321" data-v-2197f935>convert scratch into a toaster sales website
+  </a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+can somebody please pass me the butter?
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  12)<a href="https://scratch.mit.edu/discuss/topic/499427" data-v-2197f935>Moderators tag topics</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+keep them safe for next year
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  13)<a href="https://scratch.mit.edu/discuss/topic/499428" data-v-2197f935>[159 topics] The First April Fools Directory!</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <img src="https://assets.scratch.mit.edu/get_image/.%2E/1fbb58d59459225af038033c6c124910.png" width="100px" height="100px" data-v-2197f935> <br data-v-2197f935>- yeet goat says hello
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  14)<a href="https://scratch.mit.edu/discuss/topic/499406" data-v-2197f935>Fixing Server Troubles in the Forums</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+they are very laggy 4 me btw
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  15)<a href="https://scratch.mit.edu/discuss/topic/499360" data-v-2197f935>Scratch Team Member Alignment Chart</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+lets see if Paddle2See is evil….
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  16)<a href="https://scratch.mit.edu/discuss/topic/499419" data-v-2197f935>Why is the Questions about Scratch forum inferior to the Suggestions forum
+    on April Fools' Day?</a></h4> <a style="font-size: 10px" data-v-2197f935>in Questions about Scratch</a> <br data-v-2197f935>
+find out yourself by clicking ^^
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  17)<a href="https://scratch.mit.edu/discuss/topic/499441" data-v-2197f935>remove when green flag clicked</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+ummm how do i use appel then :(
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  18)<a href="https://scratch.mit.edu/discuss/topic/346066" data-v-2197f935>Make A Version of Scratch for Windows 3.1</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+no windows xp pog
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  19)<a href="https://scratch.mit.edu/discuss/topic/499388" data-v-2197f935>1d scratch</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+za-chary's suggestions are epicly epic always
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  20)<a href="https://scratch.mit.edu/discuss/topic/499464" data-v-2197f935>4d Scratch</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+-tries to find the fourth dimension-
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  21)<a href="https://scratch.mit.edu/discuss/topic/499443" data-v-2197f935>im bored so im gonna show you a paper i wrote for my english class one day
+    a few months back</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+read a book please dankuu
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  22)<a href="https://scratch.mit.edu/discuss/topic/499368" data-v-2197f935>*teleports behind you* THANKS FOR THE LINK! IT DOES SEEM LIKE THIS IS A
+    DUPLICATE TOPIC!</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+this scares me
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  23)<a href="https://scratch.mit.edu/discuss/topic/499431" data-v-2197f935>STICKY THIS TOPIC</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+rip them
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  24)<a href="https://scratch.mit.edu/discuss/topic/499463" data-v-2197f935>put x on all pfps</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+because there is a trend of X because of the few days thing
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  25)<a href="https://scratch.mit.edu/discuss/topic/499471" data-v-2197f935>Ban Scratch Cat!!!!!</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+please no
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  26)<a href="https://scratch.mit.edu/discuss/topic/499486" data-v-2197f935>send jeffalo admin panel screenshots</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+ummm is jefalo geting bannend?
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>27)<a href="https://scratch.mit.edu/discuss/topic/499512" data-v-2197f935>.</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+.
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  28)<a href="https://scratch.mit.edu/discuss/topic/499504" data-v-2197f935>plz change everyone pfp to a rickroll temporary!!1</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+no thank you i like my blue profile picture which fits in perfectly with
+shefwerld
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  29)<a href="https://scratch.mit.edu/discuss/topic/499416" data-v-2197f935>BAN Paddle2See</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+nah
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  30)<a href="https://scratch.mit.edu/discuss/topic/499531" data-v-2197f935>za-chary please change everyone's pfp to a koala</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+i dont think he has the power to do that though
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  31)<a href="https://scratch.mit.edu/discuss/topic/499539" data-v-2197f935>Capitalize the S in “Account settings”</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+this is the best suggestion so far
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  32)<a href="https://scratch.mit.edu/discuss/topic/499433" data-v-2197f935>chaneg da scrach cat to the gumy ber from the gumy ber songg</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+gumy ber is vey neu
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  33)<a href="https://scratch.mit.edu/discuss/topic/499549" data-v-2197f935>redirect scratch.mit.edu/discuss/ to ocular.jeffalo.net/</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+if that happened i would have to set up my own forum which i cannot do
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  35)<a href="https://scratch.mit.edu/discuss/topic/499556" data-v-2197f935>Dertermenter vs Za-Chary boxing match</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+[color=red]ouch[/color]
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  36)<a href="https://scratch.mit.edu/discuss/topic/499557" data-v-2197f935>I should probably go get dressed and do laundry.</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+[url=https://scratch.mit.edu/discuss/topic/499564/]meep[/url]
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  37)<a href="https://scratch.mit.edu/discuss/topic/499554" data-v-2197f935>breaking news</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+breaking news live from carmes inc.
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  38)<a href="https://scratch.mit.edu/discuss/topic/499567" data-v-2197f935>ad d every re je ce te d blo ck ( SCR ATH C TEEM ER EA D P LZ PZL PZL ZPLZ
+    PZLP ZLPLZP ZPL ZPLP ZLPLPLZP PLZ)</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+umm wouldn't that waste time
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  39)<a href="https://scratch.mit.edu/discuss/topic/499572" data-v-2197f935>What is a suggestion?</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+support
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  40)<a href="https://scratch.mit.edu/discuss/topic/499571" data-v-2197f935>can i hack github</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+hack your own account then
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  41)<a href="https://scratch.mit.edu/discuss/topic/499382" data-v-2197f935>Space-Time Travel Extension | Request From General Relativity Incorporated
+    to the Scratch Community | General Relativity Incorporated Terms of Use</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  42)<a href="https://scratch.mit.edu/discuss/topic/499597" data-v-2197f935>za-chary vs paddle2see</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+ummmmmm @harakou?
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  43)<a href="https://scratch.mit.edu/discuss/topic/499611" data-v-2197f935>How do I cook eggs?</a></h4> <a style="font-size: 10px" data-v-2197f935>in Project Ideas</a> <br data-v-2197f935>
+[i]Assistance required.[/i]
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  44)<a href="https://scratch.mit.edu/discuss/topic/499599" data-v-2197f935>Ban sleeping</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+wonder how the fdreerf will work, eh?
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  45)<a href="https://scratch.mit.edu/discuss/topic/499402" data-v-2197f935>scratch is 2 complicated 4 new scratch.</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+[i]does not compute.[/i]
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  46)<a href="https://scratch.mit.edu/discuss/topic/499439" data-v-2197f935>How 2 uz scratchblox?</a></h4> <a style="font-size: 10px" data-v-2197f935>in Questions about Scratch</a> <br data-v-2197f935>
+I'm not the right person for that.
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  47)<a href="https://scratch.mit.edu/discuss/topic/499409" data-v-2197f935>Alllow eclickbaet</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+wat idk
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  48)<a href="https://scratch.mit.edu/discuss/topic/499462" data-v-2197f935>F4F button</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+f4f is bad
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  49)<a href="https://scratch.mit.edu/discuss/topic/392943" data-v-2197f935>BAN necroposting in Suggestions</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+how would dupes work then
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  50)<a href="https://scratch.mit.edu/discuss/topic/499664" data-v-2197f935>great browser block</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+edge chromium is better not the fox of fire.
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  51)<a href="https://scratch.mit.edu/discuss/topic/499673" data-v-2197f935>Automatically add an unremovable [color=transparent] or [scratchblocks] tag
+    to every post.</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+I cannot think how this will benefit scratch as an educational website.
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  52)<a href="https://scratch.mit.edu/discuss/topic/499677" data-v-2197f935>INSUGEST YOU GIVE YOUR EGG CRECIPE ZACHARY</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+in this episode of Za-Chary's cooking, we finally find out how he makes his
+world-famous fried eggs! see https://scratch.mit.edu/discuss/post/5064518/ for
+what his stove is
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  53)<a href="https://scratch.mit.edu/discuss/topic/499669" data-v-2197f935>force follow</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+dat is scary
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  54)<a href="https://scratch.mit.edu/discuss/topic/499591" data-v-2197f935>Promote me to teh evil kitteh empress of scretch</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+no
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>55)<a href="https://scratch.mit.edu/discuss/topic/499648" data-v-2197f935>scratch</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+best sugestion ever
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  56)<a href="https://scratch.mit.edu/discuss/topic/499652" data-v-2197f935>language idea: english</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+wow
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>57)<a href="https://scratch.mit.edu/discuss/topic/499743" data-v-2197f935>Join me</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+[i]I cannot answer your post right now. Please try again later.[/i]
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  58)<a href="https://scratch.mit.edu/discuss/topic/499678" data-v-2197f935>User cannot make projects until they're account is 5+ years old.</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+nooooooo plz dont delete flapy cat and jefalo
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  59)<a href="https://scratch.mit.edu/discuss/topic/499746" data-v-2197f935>remove scratch entirely</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+sad times :(
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  60)<a href="https://scratch.mit.edu/discuss/topic/499935" data-v-2197f935>im bored again time to post my peppa pig short horror story i also wrote
+    for english class</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+yes story time awesome
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  61)<a href="https://scratch.mit.edu/discuss/topic/499927" data-v-2197f935>Make scratch.mit.edu a Diet Water™ production company</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+water
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  62)<a href="https://scratch.mit.edu/discuss/topic/499951" data-v-2197f935>Hey, you've been a good boy. Heres a cookie. (this is a suggestion)</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+fun fact: i like cookies, especially chocolate chip.
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  63)<a href="https://scratch.mit.edu/discuss/topic/499914" data-v-2197f935>Move April Fools Day to April 3</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+rip you @-accio-
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  64)<a href="https://scratch.mit.edu/discuss/topic/499955" data-v-2197f935>Make Scratch Cat a dog!</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+PLEASE NO I HAD ENOUGH WITH ITCH CAT
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  65)<a href="https://scratch.mit.edu/discuss/topic/499905" data-v-2197f935>reject this suggestion</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+your choice not mine
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  66)<a href="https://scratch.mit.edu/discuss/topic/499621" data-v-2197f935>Scratch Cat With You - Itch Cat</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+nice song
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  67)<a href="https://scratch.mit.edu/discuss/topic/499972" data-v-2197f935>make the header look like this:</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+its too late mate
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  68)<a href="https://scratch.mit.edu/discuss/topic/500028" data-v-2197f935>Officially add the XF emoji to Scratch.</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+[i]does not compute.[/i]
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  69)<a href="https://scratch.mit.edu/discuss/topic/499882" data-v-2197f935>Remove the Editor</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+scratch will die if this was implemented.
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  70)<a href="https://scratch.mit.edu/discuss/topic/500197" data-v-2197f935>Remove signatures</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+no support
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>71)<a href="https://scratch.mit.edu/discuss/topic/500217" data-v-2197f935>Spam.</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+eat spam
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  72)<a href="https://scratch.mit.edu/discuss/topic/500220" data-v-2197f935>za-chary please read me a bedtime story</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+tbh [url=//scratch.mit.edu/users/Za-Chary]@Za-Chary [/url] should own his own
+youtube channel about how he lives
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  73)<a href="https://scratch.mit.edu/discuss/topic/500262" data-v-2197f935>Not a suggestion</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+[i]does not compute.[/i]
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  74)<a href="https://scratch.mit.edu/discuss/topic/500283" data-v-2197f935>A new Scratch Mascot</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+i like where the cat is thank you very much
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  75)<a href="https://scratch.mit.edu/discuss/topic/500451" data-v-2197f935>I am mad in the suggestions forum. True or false?</a></h4> <a style="font-size: 10px" data-v-2197f935>in Questions about Scratch</a> <br data-v-2197f935>
+yes i am
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  76)<a href="https://scratch.mit.edu/discuss/topic/500051" data-v-2197f935>COPYRIGHT AND SELL FDREERF</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+@fdreerf's choice, not yours
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  77)<a href="https://scratch.mit.edu/discuss/topic/500511" data-v-2197f935>Delete the scratch logo</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+delete your profile picture
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  78)<a href="https://scratch.mit.edu/discuss/topic/500495" data-v-2197f935>Replace the all sounds in scratch with this</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+-breaks scratch's motto-
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>79)<a href="https://scratch.mit.edu/discuss/topic/500510" data-v-2197f935>Lmiep</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+skfjnf
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  80)<a href="https://scratch.mit.edu/discuss/topic/500497" data-v-2197f935>Implement all rejected suggestions</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+duplicate. Wait, I can't find it.
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  81)<a href="https://scratch.mit.edu/discuss/topic/500509" data-v-2197f935>Scratch addons</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+epic extension
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  82)<a href="https://scratch.mit.edu/discuss/topic/500500" data-v-2197f935>JP | How to Get Among Us for Free on PC | Sticky Guide</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+NOT A STICKY
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  83)<a href="https://scratch.mit.edu/discuss/topic/500480" data-v-2197f935>force everyone on scratch to use grammarly</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+@hekcer
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>84)<a href="https://scratch.mit.edu/discuss/topic/1199" data-v-2197f935>Wow!</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <a href="https://functionalmetatable.github.io/projects/player/ytfs?v=zqTwOoElxBA" data-v-2197f935><img src="https://assets.scratch.mit.edu/get_image/.%2E/3523ecafa370a80d8535bbb306a3e407.gif" width="100px" height="100px" data-v-2197f935></a> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>85)<a href="https://scratch.mit.edu/discuss/topic/500507" data-v-2197f935>RSS feed</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+wat is [big]RSS[/big]
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>86)<a href="https://scratch.mit.edu/discuss/topic/499769" data-v-2197f935>&quot;a&quot;-&gt;&quot;æ&quot;</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+yæ
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  87)<a href="https://scratch.mit.edu/discuss/topic/500471" data-v-2197f935>King of the page</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+[i]does not compute.[/i]
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  88)<a href="https://scratch.mit.edu/discuss/topic/500207" data-v-2197f935>✔✳✅ THE EMERALD SHOP 5.0 ✔✳✅ Hiring and open for orders! ✅✳✔ Quality
+    orders done by friendly, reliable, and professional staff! ✅✳✔</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+[small][i]Reported to be moved[/i][/small]
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  89)<a href="https://scratch.mit.edu/discuss/topic/500488" data-v-2197f935>scratchsune miku</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+thisandagain plz explain
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  90)<a href="https://scratch.mit.edu/discuss/topic/500496" data-v-2197f935>Change Scratch Cat's face to Rick Astley!</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+[url=//functionalmetatable.github.io/meh]e[/url]
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  91)<a href="https://scratch.mit.edu/discuss/topic/500491" data-v-2197f935>I want to have a sticky on the Japanese forum</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+plz learn japanese then
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  92)<a href="https://scratch.mit.edu/discuss/topic/500490" data-v-2197f935>IOS IPADOS 15 BETA LEAK!!!!!!!!!!!!!!!!!!!!!</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+Sadly, i do not use iOS.
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  93)<a href="https://scratch.mit.edu/discuss/topic/499807" data-v-2197f935>MAKE 60 SECOND RULE 100000000000000000000000000000 SECONDS</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+-tries to edit sticky-
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  94)<a href="https://scratch.mit.edu/discuss/topic/500503" data-v-2197f935>HOW DO WE INSERT GIF AS A SPRITE and THUMNAIL</a></h4> <a style="font-size: 10px" data-v-2197f935>in Questions about Scratch</a> <br data-v-2197f935>
+Idk
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  95)<a href="https://scratch.mit.edu/discuss/topic/500305" data-v-2197f935>Where's the bathroom?</a></h4> <a style="font-size: 10px" data-v-2197f935>in Questions about Scratch</a> <br data-v-2197f935>
+Somewhere in the world.
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  96)<a href="https://scratch.mit.edu/discuss/topic/500475" data-v-2197f935>big brain theory</a></h4> <a style="font-size: 10px" data-v-2197f935>in Questions about Scratch</a> <br data-v-2197f935>
+big brain
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  97)<a href="https://scratch.mit.edu/discuss/topic/500365" data-v-2197f935>How do I use blocks?</a></h4> <a style="font-size: 10px" data-v-2197f935>in Help With Scripts</a> <br data-v-2197f935>
+you already made projects though
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  98)<a href="https://scratch.mit.edu/discuss/topic/499306" data-v-2197f935>advanced topioc™</a></h4> <a style="font-size: 10px" data-v-2197f935>in Advanced Topics</a> <br data-v-2197f935>
+Forums™
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>99)<a href="https://scratch.mit.edu/discuss/topic/500477" data-v-2197f935>F</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+g
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  100)<a href="https://scratch.mit.edu/discuss/topic/500479" data-v-2197f935>make a scratch editor dark theme</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+im not sure if this is an AF suggestion
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  101)<a href="https://scratch.mit.edu/discuss/topic/500468" data-v-2197f935>Give infinite energy units for reaching 2000 posts on April Fools!</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+electric gravity water space
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  102)<a href="https://scratch.mit.edu/discuss/topic/499808" data-v-2197f935>sue everyone who calls me a tree</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+yay 100th topic
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  103)<a href="https://scratch.mit.edu/discuss/topic/499983" data-v-2197f935>Do Not Post Here 2: The Sequel</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+RIP i missed it
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  104)<a href="https://scratch.mit.edu/discuss/topic/500139" data-v-2197f935>permaban everyone</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+delete your account if you want to leave scratch lol
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>105)<a href="https://scratch.mit.edu/discuss/topic/500201" data-v-2197f935>helo</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+helo to you to
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  106)<a href="https://scratch.mit.edu/discuss/topic/500343" data-v-2197f935>Guide to Duplicating (Za-Chary Approved!)</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+plz no you are making everything worse
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  107)<a href="https://scratch.mit.edu/discuss/topic/500300" data-v-2197f935>Sorry, you have to wait 60 seconds between posts.</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+That really annoys me, that 60 second rule.
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  108)<a href="https://scratch.mit.edu/discuss/topic/500327" data-v-2197f935>Za-Chary merch</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+Za-Chary = &quot;Epic Gamer&quot;; Za-Chary.merch = &quot;in Suggestions forum&quot;;
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  109)<a href="https://scratch.mit.edu/discuss/topic/500125" data-v-2197f935>za-chary sprite</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+this.needsZa-CharySprite = true;
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  110)<a href="https://scratch.mit.edu/discuss/topic/500057" data-v-2197f935>ZA-CHARY WAS BANNED!!! PARTY TIME!!!</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+:( :( :( :( :(
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  111)<a href="https://scratch.mit.edu/discuss/topic/500521" data-v-2197f935>The Unofficial List Of Rejected Suggestions</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+no support
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  112)<a href="https://scratch.mit.edu/discuss/topic/500522" data-v-2197f935>ban me!!!!!!!!!</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+why
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  113)<a href="https://scratch.mit.edu/discuss/topic/499966" data-v-2197f935>Buy Coca Cola</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  114)<a href="https://scratch.mit.edu/discuss/topic/500520" data-v-2197f935>Acquire Apple for 100 trillion</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+LLK can't spend that much money.
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  115)<a href="https://scratch.mit.edu/discuss/topic/500516" data-v-2197f935>Please wait</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+why
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  116)<a href="https://scratch.mit.edu/discuss/topic/500191" data-v-2197f935>Abolish private property</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+plz dont abolish my house thx
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  117)<a href="https://scratch.mit.edu/discuss/topic/499606" data-v-2197f935>Add poggers emote</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+Poggers
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  118)<a href="https://scratch.mit.edu/discuss/topic/499706" data-v-2197f935>Force everyone to play minecraft</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+plz no i havent got minecraft java edition yet
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  119)<a href="https://scratch.mit.edu/discuss/topic/499449" data-v-2197f935>Replace Scratch Cat</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+plz dont mess with the SCRATCH CAT
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  120)<a href="https://scratch.mit.edu/discuss/topic/500518" data-v-2197f935>my hair got clipped into my headphones</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+RIP you
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>121)<a href="https://scratch.mit.edu/discuss/topic/500512" data-v-2197f935>⠃⠗⠇</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+.
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  122)<a href="https://scratch.mit.edu/discuss/topic/499785" data-v-2197f935>rhythm heaven extension</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+How would that work?
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  123)<a href="https://scratch.mit.edu/discuss/topic/499873" data-v-2197f935>Add communism to Scratch</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+[i](removed)[/i]
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  124)<a href="https://scratch.mit.edu/discuss/topic/500182" data-v-2197f935>Unsticky all of the sticky’s
+  </a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+Why did I waste my time on [b]this[/b] then?
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  125)<a href="https://scratch.mit.edu/discuss/topic/499862" data-v-2197f935>give free 19 dollar fortnite cards to everyone on scratch</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+FORTNITE IS BAD FOR YOUNG CHILDREN
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  126)<a href="https://scratch.mit.edu/discuss/topic/499860" data-v-2197f935>DaBaby in scratch</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+[i]does not compute.[/i]
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  127)<a href="https://scratch.mit.edu/discuss/topic/500434" data-v-2197f935>scrach team pls pls pls delte scrach</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+dupe
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  128)<a href="https://scratch.mit.edu/discuss/topic/500417" data-v-2197f935>One sec imma just eat a full box of shapes pizza</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+yum yum is better
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>129)<a href="https://scratch.mit.edu/discuss/topic/500474" data-v-2197f935>E</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  130)<a href="https://scratch.mit.edu/discuss/topic/500467" data-v-2197f935>I might spam this forum 1 more time</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  131)<a href="https://scratch.mit.edu/discuss/topic/500432" data-v-2197f935>pwease give pedibfple scratch taem memberpihs for a dya pwease</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  132)<a href="https://scratch.mit.edu/discuss/topic/500360" data-v-2197f935>Permaban users who say this word</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+Why?
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  133)<a href="https://scratch.mit.edu/discuss/topic/500426" data-v-2197f935>mak a blog form</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  134)<a href="https://scratch.mit.edu/discuss/topic/500431" data-v-2197f935>Add facts</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  135)<a href="https://scratch.mit.edu/discuss/topic/499744" data-v-2197f935>Make the scratch team cucumbers</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+cu cummmmm brrrrrrrrrrrrrrrr cucumber go brrr
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  136)<a href="https://scratch.mit.edu/discuss/topic/499855" data-v-2197f935>Decrease the 60-Second Rule</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+its not what you think it is...
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  137)<a href="https://scratch.mit.edu/discuss/topic/500559" data-v-2197f935>me has found paddle2see's alt and the suggestion is put it everyweher</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+AAAAA I HAVE FOUND PADDLE2SEE's ALT YES BOIS
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  138)<a href="https://scratch.mit.edu/discuss/topic/499741" data-v-2197f935>Forum Helper Alignment Chart</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+sad times :(
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  139)<a href="https://scratch.mit.edu/discuss/topic/500594" data-v-2197f935>Scratch Table</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  140)<a href="https://scratch.mit.edu/discuss/topic/500531" data-v-2197f935>SCRATCH THEME SONG!</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>141)<a href="https://scratch.mit.edu/discuss/topic/500592" data-v-2197f935></a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+Try going on this topic when it was on the page.
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  142)<a href="https://scratch.mit.edu/discuss/topic/500357" data-v-2197f935>Scratch is a misleading name, change it!</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  143)<a href="https://scratch.mit.edu/discuss/topic/500616" data-v-2197f935>A &quot;Disable Remixes&quot; button.</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  144)<a href="https://scratch.mit.edu/discuss/topic/500619" data-v-2197f935>allow non-scratch team members to view the dustbin topics</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  145)<a href="https://scratch.mit.edu/discuss/topic/500615" data-v-2197f935>BAN PEOPLE WITH 100+ POSTS</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  146)<a href="https://scratch.mit.edu/discuss/topic/500543" data-v-2197f935>guess the website and get a follow</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  147)<a href="https://scratch.mit.edu/discuss/topic/500024" data-v-2197f935>Please fix the error in https://scratch.mit.edu/discuss/ 2, 12, 40, 42, 50,
+    52, everything &gt; 60, and all dustbinned topics</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  148)<a href="https://scratch.mit.edu/discuss/topic/500639" data-v-2197f935>Ban all people who don't like goats</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  149)<a href="https://scratch.mit.edu/discuss/topic/500672" data-v-2197f935>Peppa Pig + Caillou Fan Club Studio</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+I hated this day..
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  150)<a href="https://scratch.mit.edu/discuss/topic/500666" data-v-2197f935>partner with amogus</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  151)<a href="https://scratch.mit.edu/discuss/topic/500641" data-v-2197f935>Ban all people who don't like Luo Tianyi, Hatsune Miku, or Vocaloid</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  152)<a href="https://scratch.mit.edu/discuss/topic/500683" data-v-2197f935>Can I hack scratch</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+Well, this person is bored.
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  153)<a href="https://scratch.mit.edu/discuss/topic/500694" data-v-2197f935>Insert topic name asking about something that will get me banned</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+thisandagain plz explain
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  154)<a href="https://scratch.mit.edu/discuss/topic/500682" data-v-2197f935>How do i get banned</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  155)<a href="https://scratch.mit.edu/discuss/topic/500696" data-v-2197f935>GIVE ME A TIME MACHINE</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  156)<a href="https://scratch.mit.edu/discuss/topic/500589" data-v-2197f935>revert scratch to negative 3.0</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+[i]does not compute.[/i]
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  157)<a href="https://scratch.mit.edu/discuss/topic/500697" data-v-2197f935>Scratch should allow NSFW content</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  158)<a href="https://scratch.mit.edu/discuss/topic/500680" data-v-2197f935>BAN CAILLOU</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+PLEASE I AM BEGGING YOU
+
+<br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  159)<a href="https://scratch.mit.edu/discuss/topic/500624" data-v-2197f935>The ST made a new Scratch Lab!</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  160)<a href="https://scratch.mit.edu/discuss/topic/500642" data-v-2197f935>Press this text to get 20 followers</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>161)<a href="https://scratch.mit.edu/discuss/topic/500245" data-v-2197f935>chicken</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  162)<a href="https://scratch.mit.edu/discuss/topic/500668" data-v-2197f935>BAN RECOLORING!!!1!!1!!1!</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935> <i data-v-2197f935>No description provided.</i> <br data-v-2197f935><br data-v-2197f935> <h4 data-v-2197f935>
+  163)<a href="https://scratch.mit.edu/discuss/topic/500777" data-v-2197f935>Ban and remove all signatures</a></h4> <a style="font-size: 10px" data-v-2197f935>in Suggestions</a> <br data-v-2197f935>
+no yeet goat will leave
+
+<br data-v-2197f935><br data-v-2197f935></div></div> <div class="footer"><div class="shadow-3xl bg-blue-800" data-v-13cdbfe3><div class="m-0" data-v-13cdbfe3><div class="bottom p-10" data-v-13cdbfe3><p class="text-purple-50" data-v-13cdbfe3>
+        Copyright © rellyepikprograma 2022. All Rights Reserved unless noted.
+        <br data-v-13cdbfe3> <br data-v-13cdbfe3></p><div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex icons align-right" data-v-13cdbfe3><a href="https://github.com/rellyepikprograma" data-v-13cdbfe3><svg height="30" viewBox="0 0 16 16" version="1.1" width="30" fill="#E5E7ED" data-v-13cdbfe3><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" data-v-13cdbfe3></path></svg></a> <a href="https://scratch.mit.edu/users/rellyepikprograma" data-v-13cdbfe3><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0,0,54.81885,81.9421" data-v-13cdbfe3><g transform="translate(-213,-139.9999)" data-v-13cdbfe3><g data-paper-data="{"isPaintingLayer":true}" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray stroke-dashoffset="0" style="mix-blend-mode: normal" data-v-13cdbfe3><path d="M266.78,199.432c-3.23,8.95 -12.01,14.39 -26.09,16.17c-0.64,0.08 -1.27,0.13 -1.9,0.15c-0.82,1.2 -1.89,2.24 -3.15,3.05c-3.3,2.11 -6.39,3.14 -9.44,3.14c-6.27,0 -13.02,-4.68 -13.02,-14.96c0,-0.7 0.03,-1.61 0.1,-2.87c0.03,-0.54 0.06,-0.96 0.07,-1.27c-0.17,-0.78 -0.26,-1.57 -0.26,-2.37v-4.84c0,-0.79 0.08,-1.58 0.24,-2.37c0.01,-0.67 0.04,-1.42 0.09,-2.24c-0.24,-0.88 -0.42,-1.9 -0.42,-3.04c0,-0.52 0.04,-1.04 0.11,-1.55c0.38,-2.68 1.57,-5.37 3.58,-7.52c-0.69,-1.93 -1.05,-3.97 -1.05,-6.06v-5.1c0,-2.07 0.41,-4.65 2.42,-11.07c0.84,-2.76 1.11,-3.62 1.48,-4.42c1.97,-4.42 4.94,-6.63 7.1,-7.72c3.53,-1.76 7.32,-2.66 11.26,-2.66c1.82,0 3.56,0.19 5.22,0.55c0.74,-0.5 1.53,-0.92 2.37,-1.27c1.07,-0.46 2.21,-0.78 3.47,-0.98c3.15,-0.54 6.48,0.13 9.38,1.89c3.05,1.86 6.55,5.72 6.12,13.66c-0.07,1.4 -0.19,3.27 -0.37,5.71c-0.01,0.06 -0.01,0.12 -0.02,0.18c-0.16,1.77 -0.39,4.41 -0.7,7.9c0.08,1.35 0.05,2.86 -0.07,4.64c-0.05,0.68 -0.16,1.36 -0.34,2.02c-0.04,0.15 -0.08,0.29 -0.12,0.42c1.35,1.73 2.27,3.46 2.9,4.96c0.59,1.19 1.09,2.56 1.53,4.23c0.17,0.63 0.28,1.27 0.33,1.92c0.45,5.61 0.22,8.92 -0.82,11.72z" fill="#e5e7ed" data-v-13cdbfe3></path> <path d="M256.636,188.596c0.293,3.637 0.233,5.981 -0.176,7.037c-1.702,4.809 -7.42,7.828 -17.152,9.06c-3.285,0.411 -6.568,-1.143 -9.853,-4.662c0,0.528 0.117,2.111 0.353,4.751c0.176,1.935 0.146,3.518 -0.088,4.749c-1.467,0.938 -2.639,1.408 -3.519,1.408c-1.35,0 -2.023,-1.319 -2.023,-3.959c0,-0.469 0.029,-1.216 0.088,-2.242c0.058,-1.025 0.088,-1.744 0.088,-2.155c0,-0.997 -0.088,-1.7 -0.264,-2.111v-4.838c0,-0.117 0.029,-0.249 0.088,-0.396c0.058,-0.146 0.117,-0.278 0.176,-0.396c-0.059,-0.82 -0.03,-2.081 0.088,-3.782c0.117,-1.056 0.117,-1.729 0,-2.023c-0.294,-0.585 -0.439,-0.937 -0.439,-1.055c0.233,-1.642 1.437,-2.463 3.606,-2.463c1.407,0 2.257,0.499 2.551,1.495c0,0.938 0.117,2.317 0.352,4.134c0.353,2.111 1.466,4.223 3.343,6.333c2.052,2.405 4.016,3.519 5.894,3.343c2.111,-0.233 4.222,-0.732 6.333,-1.495c2.932,-1.056 4.691,-2.287 5.278,-3.694c0.409,-1.056 0.615,-2.169 0.615,-3.343c0,-3.576 -1.319,-6.245 -3.958,-8.004c-1.174,-0.762 -3.343,-1.378 -6.51,-1.848c-1.818,-0.233 -2.933,-0.352 -3.342,-0.352c-2.815,0.059 -5.44,-0.85 -7.873,-2.727c-2.434,-1.876 -3.65,-4.047 -3.65,-6.51v-5.101c0,-1.113 0.645,-3.723 1.936,-7.828c0.585,-1.936 0.908,-2.961 0.968,-3.079c0.527,-1.231 1.201,-2.052 2.022,-2.463c1.993,-0.996 4.104,-1.495 6.333,-1.495c4.339,0 7.535,1.759 9.588,5.277c0.176,0.176 0.469,0.44 0.88,0.792c0.058,-0.82 0.176,-2.081 0.352,-3.782c-0.059,-0.762 -0.118,-1.495 -0.176,-2.199c0,-0.82 0.409,-1.377 1.231,-1.671c0.234,-0.117 0.557,-0.205 0.968,-0.264c0.586,-0.117 1.217,0.03 1.892,0.439c0.673,0.411 0.952,1.643 0.835,3.694c-0.059,1.29 -0.176,3.108 -0.352,5.453c-0.176,1.936 -0.439,4.897 -0.792,8.885c0.117,0.938 0.117,2.229 0,3.87c-0.294,1.114 -1.174,1.671 -2.639,1.671c-0.763,0 -1.495,-0.205 -2.199,-0.615c-0.352,-1.113 -0.527,-1.584 -0.527,-1.408c0.116,-1.583 -0.206,-3.694 -0.968,-6.333c-0.646,-1.348 -1.539,-3.268 -2.683,-5.761c-1.144,-2.492 -2.654,-3.827 -4.53,-4.003c-2.346,-0.176 -3.87,0.616 -4.574,2.375c-0.234,0.763 -0.558,1.878 -0.967,3.343c-0.704,2.17 -1.144,4.252 -1.32,6.245c-0.059,0.646 -0.118,0.91 -0.176,0.792c0.176,1.174 0.381,2.346 0.616,3.519c0.293,1.466 1.012,2.581 2.155,3.342c1.144,0.763 3.327,1.231 6.553,1.407c7.916,0.471 12.812,3.227 14.689,8.269c0.292,0.47 0.585,1.261 0.879,2.374z" fill="#1e40af" data-v-13cdbfe3></path></g></g></svg></a></div> <p data-v-13cdbfe3></p></div></div></div></div></div></div></div><script defer src="/_nuxt/static/1654979755/projects/april-fools-directory/state.js"></script><script src="/_nuxt/9818d4a.js" defer></script><script src="/_nuxt/50c6b79.js" defer></script><script src="/_nuxt/8a9d9cc.js" defer></script><script src="/_nuxt/613a642.js" defer></script><script src="/_nuxt/9473095.js" defer></script>
+  </body>
+</html>
